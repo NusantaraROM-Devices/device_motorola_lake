@@ -56,11 +56,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-egis.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-egis.kl \
     $(LOCAL_PATH)/idc/uinput-egis.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-egis.idc
 
-# FM
-PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
-
 # Init
 PRODUCT_PACKAGES += \
     init.lake.rc
