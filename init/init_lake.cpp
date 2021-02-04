@@ -83,23 +83,23 @@ void vendor_load_device_properties()
     bootsku = GetProperty("ro.boot.hardware.sku", "");
     if (bootsku == "XT1965-T") {
         /* T-Mobile REVVLRY+ */
-        property_override_device("ro.build.description", "lake_revvl_n-user 9 PCWS29.83-56-12 ec5de release-keys");
+        property_override_device("ro.build.description", "lake_revvl_n-user 10 QPWS30.142-Q3-28-25-3 4cb94 release-keys");
         property_override_device("persist.vendor.radio.customer_mbns", "tmo_usa_ims_default.mbn");
         property_override_device("persist.vendor.radio.data_con_rprt", "1");
         property_override_device("persist.vendor.ims.playout_delay", "10");
         property_override_device("persist.vendor.ims.cam_sensor_delay", "20");
         property_override_device("persist.vendor.ims.display_delay", "40");
         for (const auto &source : ro_props_default_source_order) {
-            set_ro_build_prop(source, "fingerprint", "motorola/lake_revvl/lake:9/PCWS29.83-56-12/ec5de:user/release-keys");
+            set_ro_build_prop(source, "fingerprint", "motorola/lake_revvl/lake:10/QPWS30.142-Q3-28-25-3/4cb94:user/release-keys");
             set_ro_product_prop(source, "device", "lake_n");
             set_ro_product_prop(source, "model", "REVVLRY+");
             set_ro_product_prop(source, "name", "lake_revvl_n");
         }
     } else {
         /* moto g(7) plus (Unlocked) */
-        property_override_device("ro.build.description", "lake_revvl-user 10 QPWS30.142-Q3-28-25-3 4cb94 release-keys");
+        property_override_device("ro.build.description", "lake-user 10 QPWS30.61-21-18-5 2b2c5 release-keys");
         for (const auto &source : ro_props_default_source_order) {
-            set_ro_build_prop(source, "fingerprint", "google/redfin/redfin:11/RQ1D.210105.003/7005430:user/release-keys");
+            set_ro_build_prop(source, "fingerprint", "google/redfin/redfin:11/RQ1A.210205.004/7038034:user/release-keys");
             set_ro_product_prop(source, "device", "lake");
             set_ro_product_prop(source, "model", "moto g(7) plus");
         }
