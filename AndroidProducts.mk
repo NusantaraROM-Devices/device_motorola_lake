@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_lake.mk
+    $(LOCAL_DIR)/nad_lake.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_lake-eng \
-    evolution_lake-user \
-    evolution_lake-userdebug
+    nad_lake-eng \
+    nad_lake-user \
+    nad_lake-userdebug
